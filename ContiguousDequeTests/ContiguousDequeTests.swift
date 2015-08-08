@@ -33,7 +33,6 @@ internal func makeDequeTuple<T>(from: [T]) -> ([T], ContiguousDeque<T>) {
   return (from, ContiguousDeque(from))
 }
 
-
 extension Array {
   internal mutating func popFirst() -> Element? {
     if isEmpty { return nil }

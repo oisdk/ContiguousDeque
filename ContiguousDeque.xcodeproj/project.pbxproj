@@ -13,6 +13,12 @@
 		7060213B1B74F24600E8AB2A /* ContiguousDeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060213A1B74F24600E8AB2A /* ContiguousDeque.swift */; };
 		7060213D1B74F25700E8AB2A /* ContiguousDequeSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060213C1B74F25700E8AB2A /* ContiguousDequeSlice.swift */; };
 		7060213F1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060213E1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift */; };
+		70D160191B76069A0037E7D7 /* ContiguousList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D160181B76069A0037E7D7 /* ContiguousList.swift */; };
+		70D1601B1B7606A70037E7D7 /* ContiguousListIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D1601A1B7606A70037E7D7 /* ContiguousListIndex.swift */; };
+		70D1601D1B7606B60037E7D7 /* ContiguousListSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D1601C1B7606B60037E7D7 /* ContiguousListSlice.swift */; };
+		70D1601F1B7607100037E7D7 /* ContiguousListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D1601E1B7607100037E7D7 /* ContiguousListTests.swift */; };
+		70D160211B76071D0037E7D7 /* ContiguousListSliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D160201B76071D0037E7D7 /* ContiguousListSliceTests.swift */; };
+		70D160231B76072B0037E7D7 /* ContiguousListIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D160221B76072B0037E7D7 /* ContiguousListIndexTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,12 @@
 		7060213A1B74F24600E8AB2A /* ContiguousDeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousDeque.swift; sourceTree = "<group>"; };
 		7060213C1B74F25700E8AB2A /* ContiguousDequeSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousDequeSlice.swift; sourceTree = "<group>"; };
 		7060213E1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousDequeSliceTests.swift; sourceTree = "<group>"; };
+		70D160181B76069A0037E7D7 /* ContiguousList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousList.swift; sourceTree = "<group>"; };
+		70D1601A1B7606A70037E7D7 /* ContiguousListIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousListIndex.swift; sourceTree = "<group>"; };
+		70D1601C1B7606B60037E7D7 /* ContiguousListSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousListSlice.swift; sourceTree = "<group>"; };
+		70D1601E1B7607100037E7D7 /* ContiguousListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousListTests.swift; sourceTree = "<group>"; };
+		70D160201B76071D0037E7D7 /* ContiguousListSliceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousListSliceTests.swift; sourceTree = "<group>"; };
+		70D160221B76072B0037E7D7 /* ContiguousListIndexTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousListIndexTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,9 @@
 				706021251B74F22600E8AB2A /* Info.plist */,
 				7060213A1B74F24600E8AB2A /* ContiguousDeque.swift */,
 				7060213C1B74F25700E8AB2A /* ContiguousDequeSlice.swift */,
+				70D160181B76069A0037E7D7 /* ContiguousList.swift */,
+				70D1601A1B7606A70037E7D7 /* ContiguousListIndex.swift */,
+				70D1601C1B7606B60037E7D7 /* ContiguousListSlice.swift */,
 			);
 			path = ContiguousDeque;
 			sourceTree = "<group>";
@@ -89,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				7060212F1B74F22600E8AB2A /* ContiguousDequeTests.swift */,
+				70D1601E1B7607100037E7D7 /* ContiguousListTests.swift */,
+				70D160201B76071D0037E7D7 /* ContiguousListSliceTests.swift */,
+				70D160221B76072B0037E7D7 /* ContiguousListIndexTests.swift */,
 				7060213E1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift */,
 				706021311B74F22600E8AB2A /* Info.plist */,
 			);
@@ -203,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D1601B1B7606A70037E7D7 /* ContiguousListIndex.swift in Sources */,
+				70D160191B76069A0037E7D7 /* ContiguousList.swift in Sources */,
 				7060213B1B74F24600E8AB2A /* ContiguousDeque.swift in Sources */,
+				70D1601D1B7606B60037E7D7 /* ContiguousListSlice.swift in Sources */,
 				7060213D1B74F25700E8AB2A /* ContiguousDequeSlice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D160211B76071D0037E7D7 /* ContiguousListSliceTests.swift in Sources */,
+				70D160231B76072B0037E7D7 /* ContiguousListIndexTests.swift in Sources */,
 				706021301B74F22600E8AB2A /* ContiguousDequeTests.swift in Sources */,
 				7060213F1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift in Sources */,
+				70D1601F1B7607100037E7D7 /* ContiguousListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
