@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		706021241B74F22600E8AB2A /* ContiguousDeque.h in Headers */ = {isa = PBXBuildFile; fileRef = 706021231B74F22600E8AB2A /* ContiguousDeque.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7060212B1B74F22600E8AB2A /* ContiguousDeque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706021201B74F22600E8AB2A /* ContiguousDeque.framework */; };
+		706021301B74F22600E8AB2A /* ContiguousDequeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060212F1B74F22600E8AB2A /* ContiguousDequeTests.swift */; };
+		7060213B1B74F24600E8AB2A /* ContiguousDeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060213A1B74F24600E8AB2A /* ContiguousDeque.swift */; };
+		7060213D1B74F25700E8AB2A /* ContiguousDequeSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060213C1B74F25700E8AB2A /* ContiguousDequeSlice.swift */; };
+		7060213F1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060213E1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7060212C1B74F22600E8AB2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706021171B74F22600E8AB2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7060211F1B74F22600E8AB2A;
+			remoteInfo = ContiguousDeque;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		706021201B74F22600E8AB2A /* ContiguousDeque.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ContiguousDeque.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706021231B74F22600E8AB2A /* ContiguousDeque.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContiguousDeque.h; sourceTree = "<group>"; };
+		706021251B74F22600E8AB2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7060212A1B74F22600E8AB2A /* ContiguousDequeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContiguousDequeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7060212F1B74F22600E8AB2A /* ContiguousDequeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContiguousDequeTests.swift; sourceTree = "<group>"; };
+		706021311B74F22600E8AB2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7060213A1B74F24600E8AB2A /* ContiguousDeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousDeque.swift; sourceTree = "<group>"; };
+		7060213C1B74F25700E8AB2A /* ContiguousDequeSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousDequeSlice.swift; sourceTree = "<group>"; };
+		7060213E1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiguousDequeSliceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7060211C1B74F22600E8AB2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706021271B74F22600E8AB2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7060212B1B74F22600E8AB2A /* ContiguousDeque.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		706021161B74F22600E8AB2A = {
+			isa = PBXGroup;
+			children = (
+				706021221B74F22600E8AB2A /* ContiguousDeque */,
+				7060212E1B74F22600E8AB2A /* ContiguousDequeTests */,
+				706021211B74F22600E8AB2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		706021211B74F22600E8AB2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				706021201B74F22600E8AB2A /* ContiguousDeque.framework */,
+				7060212A1B74F22600E8AB2A /* ContiguousDequeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		706021221B74F22600E8AB2A /* ContiguousDeque */ = {
+			isa = PBXGroup;
+			children = (
+				706021231B74F22600E8AB2A /* ContiguousDeque.h */,
+				706021251B74F22600E8AB2A /* Info.plist */,
+				7060213A1B74F24600E8AB2A /* ContiguousDeque.swift */,
+				7060213C1B74F25700E8AB2A /* ContiguousDequeSlice.swift */,
+			);
+			path = ContiguousDeque;
+			sourceTree = "<group>";
+		};
+		7060212E1B74F22600E8AB2A /* ContiguousDequeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7060212F1B74F22600E8AB2A /* ContiguousDequeTests.swift */,
+				7060213E1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift */,
+				706021311B74F22600E8AB2A /* Info.plist */,
+			);
+			path = ContiguousDequeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7060211D1B74F22600E8AB2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706021241B74F22600E8AB2A /* ContiguousDeque.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7060211F1B74F22600E8AB2A /* ContiguousDeque */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706021341B74F22600E8AB2A /* Build configuration list for PBXNativeTarget "ContiguousDeque" */;
+			buildPhases = (
+				7060211B1B74F22600E8AB2A /* Sources */,
+				7060211C1B74F22600E8AB2A /* Frameworks */,
+				7060211D1B74F22600E8AB2A /* Headers */,
+				7060211E1B74F22600E8AB2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContiguousDeque;
+			productName = ContiguousDeque;
+			productReference = 706021201B74F22600E8AB2A /* ContiguousDeque.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		706021291B74F22600E8AB2A /* ContiguousDequeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706021371B74F22600E8AB2A /* Build configuration list for PBXNativeTarget "ContiguousDequeTests" */;
+			buildPhases = (
+				706021261B74F22600E8AB2A /* Sources */,
+				706021271B74F22600E8AB2A /* Frameworks */,
+				706021281B74F22600E8AB2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7060212D1B74F22600E8AB2A /* PBXTargetDependency */,
+			);
+			name = ContiguousDequeTests;
+			productName = ContiguousDequeTests;
+			productReference = 7060212A1B74F22600E8AB2A /* ContiguousDequeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		706021171B74F22600E8AB2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Donnacha Oisín Kidney";
+				TargetAttributes = {
+					7060211F1B74F22600E8AB2A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					706021291B74F22600E8AB2A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 7060211A1B74F22600E8AB2A /* Build configuration list for PBXProject "ContiguousDeque" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 706021161B74F22600E8AB2A;
+			productRefGroup = 706021211B74F22600E8AB2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7060211F1B74F22600E8AB2A /* ContiguousDeque */,
+				706021291B74F22600E8AB2A /* ContiguousDequeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7060211E1B74F22600E8AB2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706021281B74F22600E8AB2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7060211B1B74F22600E8AB2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7060213B1B74F24600E8AB2A /* ContiguousDeque.swift in Sources */,
+				7060213D1B74F25700E8AB2A /* ContiguousDequeSlice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706021261B74F22600E8AB2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706021301B74F22600E8AB2A /* ContiguousDequeTests.swift in Sources */,
+				7060213F1B74F52200E8AB2A /* ContiguousDequeSliceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7060212D1B74F22600E8AB2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7060211F1B74F22600E8AB2A /* ContiguousDeque */;
+			targetProxy = 7060212C1B74F22600E8AB2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		706021321B74F22600E8AB2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		706021331B74F22600E8AB2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		706021351B74F22600E8AB2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ContiguousDeque/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = donnacha.oisin.kidney.ContiguousDeque;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		706021361B74F22600E8AB2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ContiguousDeque/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = donnacha.oisin.kidney.ContiguousDeque;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		706021381B74F22600E8AB2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ContiguousDequeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = donnacha.oisin.kidney.ContiguousDequeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		706021391B74F22600E8AB2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ContiguousDequeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = donnacha.oisin.kidney.ContiguousDequeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7060211A1B74F22600E8AB2A /* Build configuration list for PBXProject "ContiguousDeque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706021321B74F22600E8AB2A /* Debug */,
+				706021331B74F22600E8AB2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706021341B74F22600E8AB2A /* Build configuration list for PBXNativeTarget "ContiguousDeque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706021351B74F22600E8AB2A /* Debug */,
+				706021361B74F22600E8AB2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706021371B74F22600E8AB2A /* Build configuration list for PBXNativeTarget "ContiguousDequeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706021381B74F22600E8AB2A /* Debug */,
+				706021391B74F22600E8AB2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 706021171B74F22600E8AB2A /* Project object */;
+}
