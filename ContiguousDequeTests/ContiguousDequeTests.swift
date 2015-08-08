@@ -253,18 +253,22 @@ class ContiguousDequeTests: XCTestCase {
   
   func testSplit() {
     
-    let divr = Int(arc4random_uniform(10)) + 2
-    
-    let splitFunc = { $0 % divr == 0 }
+    let splitFuncs = (0...10).map {
+      (_: Int) -> (Int -> Bool) in
+      let divr = Int(arc4random_uniform(10)) + 1
+      return { $0 % divr == 0 }
+    }
     
     (0...10)
       .map(randomArray)
       .map(makeDequeTuple)
       .flatMap { (ar, de) in
-        [true, false].flatMap { empties in
-          (0...10).flatMap { zip(
-            ar.split($0, allowEmptySlices: empties, isSeparator: splitFunc),
-            de.split($0, allowEmptySlices: empties, isSeparator: splitFunc))
+        splitFuncs.flatMap { splitFunc in
+          [true, false].flatMap { empties in
+            (0...20).flatMap { zip(
+              ar.split($0, allowEmptySlices: empties, isSeparator: splitFunc),
+              de.split($0, allowEmptySlices: empties, isSeparator: splitFunc))
+            }
           }
         }
       }.forEach { (ar, de) in

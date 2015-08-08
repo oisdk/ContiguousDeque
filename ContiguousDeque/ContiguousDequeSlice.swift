@@ -298,17 +298,25 @@ extension ContiguousDequeSlice : MutableSliceable {
       case (true, true):
         let start = front.endIndex - idxs.endIndex
         let end   = front.endIndex - idxs.startIndex
-        return ContiguousDequeSlice( front[start.successor()..<end], [front[start]] )
+        return ContiguousDequeSlice(
+          balancedF: front[start.successor()..<end],
+          balancedB: [front[start]]
+        )
       case (true, false):
         let frontTo = front.endIndex - idxs.startIndex
         let backTo  = idxs.endIndex - front.endIndex
-        return ContiguousDequeSlice( front[0 ..< frontTo], back [0 ..< backTo])
+        return ContiguousDequeSlice(
+          balancedF: front[0 ..< frontTo],
+          balancedB: back [0 ..< backTo]
+        )
       case (false, false):
         let start = idxs.startIndex - front.endIndex
         let end   = idxs.endIndex - front.endIndex
-        return ContiguousDequeSlice( [back[start]], back[start.successor() ..< end] )
-      default:
-        fatalError()
+        return ContiguousDequeSlice(
+          balancedF: [back[start]],
+          balancedB: back[start.successor() ..< end]
+        )
+      case (false, true): return []
       }
     } set {
       for (index, value) in zip(idxs, newValue) {
@@ -413,8 +421,7 @@ extension ContiguousDequeSlice : RangeReplaceableCollectionType {
       let start = subRange.startIndex - front.endIndex
       let end   = subRange.endIndex - front.endIndex
       back.removeRange(start..<end)
-    default:
-      fatalError()
+    case (false, true): return
     }
   }
   public mutating func replaceRange<
@@ -435,7 +442,7 @@ extension ContiguousDequeSlice : RangeReplaceableCollectionType {
         let start = subRange.startIndex - front.endIndex
         let end   = subRange.endIndex - front.endIndex
         back.replaceRange(start..<end, with: newElements)
-      default:
+      case (false, true):
         back.replaceRange(0..<0, with: newElements)
       }
   }
