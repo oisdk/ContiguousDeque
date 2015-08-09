@@ -7,9 +7,7 @@ class ContiguousListIndexTests: XCTestCase {
   func testIndex() {
     
     let x = ContiguousListIndex(Int(arc4random_uniform(10000)))
-    
-    XCTAssert(x.advancedBy(-n) == pred)
-    
+        
     XCTAssert(x.distanceTo(x.successor()) == 1)
     
     XCTAssert(x.distanceTo(x.predecessor()) == -1)
