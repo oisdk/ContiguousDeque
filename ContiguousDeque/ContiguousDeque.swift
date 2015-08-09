@@ -56,7 +56,7 @@ extension ContiguousDeque {
   private init(array: [Element]) {
     let half = array.endIndex / 2
     self.init(
-      balancedF: ContiguousArray(array[0..<half].reverse()),
+      balancedF: ContiguousArray(array[array.startIndex..<half].reverse()),
       balancedB: ContiguousArray(array[half..<array.endIndex])
     )
   }
@@ -310,8 +310,8 @@ extension ContiguousDeque : MutableSliceable {
         let frontTo = front.endIndex - idxs.startIndex
         let backTo  = idxs.endIndex - front.endIndex
         return ContiguousDequeSlice(
-          balancedF: front[0 ..< frontTo],
-          balancedB: back [0 ..< backTo]
+          balancedF: front[front.startIndex ..< frontTo],
+          balancedB: back [back.startIndex ..< backTo]
         )
       case (false, false):
         let start = idxs.startIndex - front.endIndex
@@ -447,7 +447,7 @@ extension ContiguousDeque : RangeReplaceableCollectionType {
         let end   = subRange.endIndex - front.endIndex
         back.replaceRange(start..<end, with: newElements)
       case (false, true):
-        back.replaceRange(0..<0, with: newElements)
+        back.replaceRange(back.startIndex..<back.startIndex, with: newElements)
       }
   }
   mutating public func reserveCapacity(n: Int) {
