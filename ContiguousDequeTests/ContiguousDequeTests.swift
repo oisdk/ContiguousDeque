@@ -261,17 +261,17 @@ class ContiguousDequeTests: XCTestCase {
     
     (0...10)
       .map(randomArray)
-      .map(makeDequeTuple)
-      .flatMap { (ar, de) in
+      .map(makeDequeTuple).flatMap { (ar, de)  in
         splitFuncs.flatMap { splitFunc in
-          [true, false].flatMap { empties in
-            (0...20).flatMap { zip(
-              ar.split($0, allowEmptySlices: empties, isSeparator: splitFunc),
-              de.split($0, allowEmptySlices: empties, isSeparator: splitFunc))
+          [true, false].flatMap { empties   in
+            (0...20).flatMap { maxLength -> Zip2Sequence<[ArraySlice<Int>], [ContiguousDequeSlice<Int>]> in
+              let arSplitted = ar.split(maxLength, allowEmptySlices: empties, isSeparator: splitFunc)
+              let deSplitted = de.split(maxLength, allowEmptySlices: empties, isSeparator: splitFunc)
+              return zip(arSplitted, deSplitted)
             }
           }
         }
-      }.forEach { (ar, de) in
+      }.forEach { (ar, de)  in
         XCTAssert(ar.elementsEqual(de))
         XCTAssert(de.isBalanced)
     }
